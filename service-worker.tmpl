@@ -41,7 +41,7 @@ var IgnoreUrlParametersMatching = [<%= ignoreUrlParametersMatching %>];
 var <%- functionName %> = <%= externalFunctions[functionName] %>;
 <% }); %>
 
-var mappings = populateCurrentCacheNames(PrecacheConfig, CacheNamePrefix, self.location);
+var mappings = populateCurrentCacheNames(PrecacheConfig, CacheNamePrefix, <%= baseUrl %>);
 var AbsoluteUrlToCacheName = mappings.absoluteUrlToCacheName;
 var CurrentCacheNamesToAbsoluteUrl = mappings.currentCacheNamesToAbsoluteUrl;
 
